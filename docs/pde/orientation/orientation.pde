@@ -17,12 +17,3 @@ void draw(){
   stroke(255);
   text(window.outerWidth, 20, 20);
 }
-
-void drawGraph(float[] _value){
-  int l = _value.length;
-  stroke(255);
-  strokeWeight(2);
-  for(int i=0;i<l;i++){
-    point(i,_value[i]);
-  }
-}
