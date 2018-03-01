@@ -24,8 +24,8 @@ void draw(){
   point(i, height/2 - alpha);
   stroke(0,255,0);
   point(i, height/2 - beta);
-  fill(0,0,255);
-  stroke(i, height/2 - gamma);
+  stroke(0,0,255);
+  point(i, height/2 - gamma);
 
   i<width ? i++ : i=0;
 
