@@ -20,6 +20,7 @@ void draw(){
   ellipse(width/2 ,height-gamma, 50, 50);
   fill(255,0,0);
   ellipse(width/2, height-alpha, 50, 50);
+  console.log(alpha);
 
   //drawGraph(value);
 }
