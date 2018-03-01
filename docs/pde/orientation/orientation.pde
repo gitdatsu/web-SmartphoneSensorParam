@@ -11,9 +11,9 @@ void setup(){
 }
 
 void draw(){
-  float alpha = g_alpha-180;
+  float alpha = g_alpha-180.0;
   float beta = g_beta;
-  float gamma = g_gamma-90;
+  float gamma = g_gamma-90.0;
 
   stroke(0);
   strokeWeight(1);
@@ -29,4 +29,5 @@ void draw(){
 
   i<width ? i++ : i=0;
 
+  text(gamma, 20, 20);
 }
