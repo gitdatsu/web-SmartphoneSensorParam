@@ -6,8 +6,8 @@ window.addEventListener("devicemotion",function(event){
 
   let result = document.getElementById("motion");
   result.innerHTML =
-    "acceleration = " + acceleration +
-    "accelerationincludingGravity = " + aig +
-    "rotationRate = " + rotationRate +
+    "acceleration = " + acceleration + "<br>" +
+    "accelerationincludingGravity = " + aig + "<br>" +
+    "rotationRate = " + rotationRate + "<br>" +
     "interval = " + interval;
 })
