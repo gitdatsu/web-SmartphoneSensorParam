@@ -4,10 +4,10 @@ window.addEventListener("devicemotion",function(event){
   let rotationRate = event.rotationRate;
   let interval = event.interval;
 
-  let result = getElementById("motion");
+  let result = document.getElementById("motion");
   result.innerHTML =
-    "acceleration = " + acceleration.toFixed(1) +
-    "accelerationincludingGravity = " + aig.toFixed(1) +
-    "rotationRate = " + rotationRate.toFixed(1) +
-    "interval = " + interval.toFixed(1);
+    "acceleration = " + acceleration +
+    "accelerationincludingGravity = " + aig +
+    "rotationRate = " + rotationRate +
+    "interval = " + interval;
 })
