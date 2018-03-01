@@ -11,15 +11,15 @@ void setup(){
 }
 
 void draw(){
-  background(0);
+  background(255);
 
   noStroke();
   fill(255,0,0);
-  ellipse(0,height-alpha,50,50);
+  ellipse(width/2, height-alpha, 50, 50);
   fill(0,255,0);
-  ellipse(0,height-beta,50,50);
+  ellipse(width/2, height-beta, 50, 50);
   fill(0,0,255);
-  ellipse(0,height-gamma,50,50);
+  ellipse(width/2 ,height-gamma, 50, 50);
 
   //drawGraph(value);
 }
