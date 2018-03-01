@@ -16,8 +16,8 @@ void draw(){
 
   strokeWeight(1);
   stroke(100);
-  text(absolute, 20, 20);
-  absolute ? stroke(0) : stroke(255);
+  text(g_absolute, 20, 20);
+  g_absolute ? stroke(0) : stroke(255);
   line(i, 0, i, height);
 
   stroke(100);
