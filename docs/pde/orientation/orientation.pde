@@ -1,19 +1,29 @@
+int i;
+
 void setup(){
-  size(window.innerWidth, 200);
+  size(window.innerWidth, 360);
   // size(600, 200);
+  i = 0;
+
+  noFill();
+  strokeWeight(1);
 }
 
 void draw(){
-  background(0);
-
-  noStroke();
-  fill(255,0,0);
-  ellipse(width/2, height-g_alpha, 50, 50);
-  fill(0,255,0);
-  ellipse(width/2, height-g_beta, 50, 50);
-  fill(0,0,255);
-  ellipse(width/2 ,height-g_gamma, 50, 50);
+  float alpha = g_alpha-180;
+  float beta = g_beta;
+  float gamma = g_gamma-90;
 
   stroke(255);
-  text(window.innerWidth, 20, 20);
+  line(i, 0, i, height);
+
+  fill(255,0,0);
+  point(i, height/2 - alpha);
+  fill(0,255,0);
+  point(i, height/2 - beta);
+  fill(0,0,255);
+  point(i, height/2 - gamma);
+
+  i<width ? i++ : i=0;
+
 }
