@@ -13,5 +13,6 @@ window.addEventListener("deviceorientation", function(event){
   result.innerHTML = "方位(°)<br />"+
     "方位（Z軸回りの回転角度:0～360）："+ g_alpha.toFixed(1) +"<br />" +
     "ピッチ（x軸回りの回転角度:-90～90）："+ g_beta.toFixed(1) +"<br />" +
-    "ロール（y軸回りの回転角度：-90～270）："+ g_gamma.toFixed(1);
+    "ロール（y軸回りの回転角度：-90～270）："+ g_gamma.toFixed(1) + "<br />" +
+    "absolute：" + g_absolute;
 });
