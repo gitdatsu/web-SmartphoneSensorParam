@@ -15,6 +15,8 @@ void draw(){
   float gamma = g_gamma-90.0;
 
   strokeWeight(1);
+  stroke(100);
+  text(absolute, 20, 20);
   absolute ? stroke(0) : stroke(255);
   line(i, 0, i, height);
 
