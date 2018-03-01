@@ -1,5 +1,5 @@
 void setup(){
-  size(window.outerWidth, 200);
+  size(window.innerWidth, 200);
   // size(600, 200);
 }
 
