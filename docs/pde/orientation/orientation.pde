@@ -5,6 +5,7 @@ void setup(){
   // size(600, 200);
   i = 0;
 
+  background(0);
   noFill();
   strokeWeight(1);
 }
@@ -14,9 +15,11 @@ void draw(){
   float beta = g_beta;
   float gamma = g_gamma-90;
 
-  stroke(255);
+  stroke(0);
+  strokeWeight(1);
   line(i, 0, i, height);
 
+  strokeWeight(3);
   fill(255,0,0);
   point(i, height/2 - alpha);
   fill(0,255,0);
