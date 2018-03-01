@@ -15,5 +15,5 @@ void draw(){
   ellipse(width/2 ,height-g_gamma, 50, 50);
 
   stroke(255);
-  text(window.outerWidth, 20, 20);
+  text(window.innerWidth, 20, 20);
 }
