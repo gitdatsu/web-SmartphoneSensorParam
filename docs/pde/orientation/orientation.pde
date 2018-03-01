@@ -2,8 +2,8 @@ int n;
 float[] value;
 
 void setup(){
-  size(window.innerWidth, 200);
-  // size(400,400);
+  // size(window.innerWidth, 200);
+  size(200,200);
 
   // n = window.outerWidth;
   // value = new float[n];
@@ -11,7 +11,7 @@ void setup(){
 }
 
 void draw(){
-  background(255);
+  background(0);
 
   noStroke();
   fill(0,255,0);
