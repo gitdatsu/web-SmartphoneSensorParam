@@ -1,6 +1,6 @@
 void setup(){
-  // size(window.outerWidth, window.outerHeight);
-  size(600, 200);
+  size(window.outerWidth, 200);
+  // size(600, 200);
 }
 
 void draw(){
