@@ -1,7 +1,11 @@
+let alpha;
+let beta;
+let gamma;
+
 window.addEventListener("deviceorientation", function(event){
-  let alpha = event.alpha;
-  let beta = event.beta;
-  let gamma = event.gamma;
+  alpha = event.alpha;
+  beta = event.beta;
+  gamma = event.gamma;
 
   let result = document.getElementById("orientation");
   result.innerHTML = "方位(°)<br />"+

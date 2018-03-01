@@ -4,13 +4,18 @@
     <meta charset="utf-8">
     <title>web-SmartphoneSensorParam</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <script src="js/deviceOrientation.js"></script>
-    <script src="js/deviceMotion.js"></script>
+    <script src="./js/processing.js"></script>
+    <script src="./js/deviceOrientation.js"></script>
+    <script src="./js/deviceMotion.js"></script>
   </head>
   <body>
     <h1>方位センサ</h1>
     <div id="orientation"></div>
+    <canvas data-processing-sources="./pde/orientation/orientation.pde"></canvas>
+
     <h1>加速度センサ</h1>
     <div id="motion"></div>
+    <!-- <canvas data-processing-sources="./pde/motion/motion.pde"></canvas> -->
+
   </body>
 </html>

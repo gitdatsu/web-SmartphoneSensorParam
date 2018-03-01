@@ -1,8 +1,13 @@
+let acceleration;
+let aig;
+let rotationRate;
+let interval;
+
 window.addEventListener("devicemotion",function(event){
-  let acceleration = event.acceleration;
-  let aig = event.accelerationIncludingGravity;
-  let rotationRate = event.rotationRate;
-  let interval = event.interval;
+  acceleration = event.acceleration;
+  aig = event.accelerationIncludingGravity;
+  rotationRate = event.rotationRate;
+  interval = event.interval;
 
   let result = document.getElementById("motion");
   result.innerHTML =
