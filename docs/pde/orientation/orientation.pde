@@ -13,12 +13,13 @@ void setup(){
 void draw(){
   background(0);
 
+  noStroke();
   fill(255,0,0);
-  ellipse(0,alpha,50,50);
+  ellipse(0,height-alpha,50,50);
   fill(0,255,0);
-  ellipse(0,beta,50,50);
+  ellipse(0,height-beta,50,50);
   fill(0,0,255);
-  ellipse(0,gamma,50,50);
+  ellipse(0,height-gamma,50,50);
 
   //drawGraph(value);
 }
