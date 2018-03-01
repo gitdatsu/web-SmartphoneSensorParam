@@ -1,13 +1,6 @@
-int n;
-float[] value;
-
 void setup(){
-  // size(window.innerWidth, 200);
-  size(200,200);
-
-  // n = window.outerWidth;
-  // value = new float[n];
-
+  // size(window.outerWidth, window.outerHeight);
+  size(window.outerWidth, 200);
 }
 
 void draw(){
@@ -22,9 +15,8 @@ void draw(){
   ellipse(width/2, height-alpha, 50, 50);
 
   stroke(255);
-  text(alpha, 20,20);
-
-  //drawGraph(value);
+  text(alpha, 20, 20);
+  text(beta, 20, 40);
 }
 
 void drawGraph(float[] _value){
