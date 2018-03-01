@@ -7,16 +7,15 @@ void draw(){
   background(0);
 
   noStroke();
+  fill(255,0,0);
+  ellipse(width/2, height-g_alpha, 50, 50);
   fill(0,255,0);
   ellipse(width/2, height-g_beta, 50, 50);
   fill(0,0,255);
   ellipse(width/2 ,height-g_gamma, 50, 50);
-  fill(255,0,0);
-  ellipse(width/2, height-g_alpha, 50, 50);
 
   stroke(255);
-  text(g_alpha, 20, 20);
-  text(g_beta, 20, 40);
+  text(window.outerWidth, 20, 20);
 }
 
 void drawGraph(float[] _value){
