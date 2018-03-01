@@ -15,8 +15,16 @@ void draw(){
   float beta = g_beta;
   float gamma = g_gamma-90.0;
 
-  stroke(0);
   strokeWeight(1);
+  stroke(0);
+  line(i, 0, i, height);
+
+  stroke(100);
+  line(0, height/2, width, height/2);
+  line(width/2, 0, width/2, height);
+  text(0, width/2, height/2);
+
+  stroke(0);
   line(i, 0, i, height);
 
   strokeWeight(3);
@@ -28,6 +36,4 @@ void draw(){
   point(i, height/2 - gamma);
 
   i<width ? i++ : i=0;
-
-  text(gamma, 20, 20);
 }
