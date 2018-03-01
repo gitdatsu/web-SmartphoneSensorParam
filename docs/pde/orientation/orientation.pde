@@ -2,7 +2,6 @@ int i;
 
 void setup(){
   size(window.innerWidth, 360);
-  // size(600, 200);
   i = 0;
 
   background(0);
@@ -16,16 +15,13 @@ void draw(){
   float gamma = g_gamma-90.0;
 
   strokeWeight(1);
-  stroke(0);
+  absolute ? stroke(0) : stroke(255);
   line(i, 0, i, height);
 
   stroke(100);
   line(0, height/2, width, height/2);
   line(width/2, 0, width/2, height);
   text(0, width/2, height/2);
-
-  stroke(0);
-  line(i, 0, i, height);
 
   strokeWeight(3);
   stroke(255,0,0);

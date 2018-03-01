@@ -1,8 +1,10 @@
+let g_absolute;
 let g_alpha;
 let g_beta;
 let g_gamma;
 
 window.addEventListener("deviceorientation", function(event){
+  g_absolute = event.absolute;
   g_alpha = event.alpha;
   g_beta = event.beta;
   g_gamma = event.gamma;
